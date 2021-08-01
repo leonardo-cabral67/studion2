@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family = Montserrat: wght @ 300;400; 700; 900& display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+alternative:wght@300;400;500;700;900&family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,14 +6,28 @@
 }
 
 :root {
-  --color-primary: #ffc500;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  --color-copy: #333;
+  --color-primary: #ffc500;
+  --default-padding: 1rem;
+  color: var(--color-copy);
 }
 
 body {
   margin: 0;
   padding-top: 7.75rem;
+}
+
+header,
+main,
+footer {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 ul {
@@ -22,20 +36,25 @@ ul {
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr 9fr;
   position: fixed;
-  align-items: center;
   top: 0;
   left: 0;
 
   z-index: 1;
-  width: 100vw;
-  height: 7.75rem;
-  padding: 0 1rem;
 
   background-color: #000;
   color: #fff;
+  width: 100%;
+}
+
+.navbar__container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+
+  width: 100vw;
+  height: 7.75rem;
+  padding: 0 1rem;
 }
 
 .navbar__links {
@@ -46,6 +65,7 @@ ul {
   margin-right: 3rem;
   font-size: 0.875rem;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .navbar__links a {
@@ -116,7 +136,7 @@ ul {
   line-height: 6.25rem;
 }
 
-.slide__copy h2 {
+.slide__copy h2 span {
   display: block;
 }
 
@@ -135,8 +155,73 @@ ul {
 
 .btn:hover,
 .btn:active,
-.btn:focus {
+.btn:focus,
+.btn--institutional {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: #fff;
+}
+
+.btn--institutional:hover {
+  color: var(--color-copy);
+  background: unset;
+}
+
+#counter {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.counter__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  place-items: center;
+  padding: 4.375rem 1rem;
+}
+
+.counter__container h3 {
+  font-size: 2.1875rem;
+  margin-right: 4rem;
+}
+
+.counter__container h3 small {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.institutional {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.125rem;
+  place-items: center;
+  padding: 4.375rem 0;
+}
+
+.institutional__image {
+  max-width: 550px;
+}
+
+.institutional__copy {
+  padding: 0 1.875rem 0 0;
+}
+
+.institutional__copy h6 {
+  font-size: 0.875;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.institutional__copy h4 {
+  font-size: 1.5625rem;
+  margin-top: 1rem;
+}
+
+.institutional p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6875rem;
+  margin-bottom: 0;
+  margin-bottom: 2.5rem;
 }

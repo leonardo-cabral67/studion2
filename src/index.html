@@ -9,35 +9,37 @@
 </head>
 <body>
     <nav class="navbar">
-        <h1 class="logo-studion">Studi<span class="copy--primary">on</span><span class="logo-studion__subtitle">Eventos</span></h1>
-
-        <ul class="navbar__links">
-            <li>
-                <a href="#Empresa">
-                    Empresa
-                </a>
-            </li>
-            <li>
-                <a href="#Eventos">
-                    Eventos
-                </a>
-            </li>
-            <li>
-                <a href="#Galeria">
-                    Galeria
-                </a>
-            </li>
-            <li>
-                <a href="#Depoimentos">
-                    Depoimentos
-                </a>
-            </li>
-            <li>
-                <a href="#Contato">
-                    Contato
-                </a>
-            </li>
-        </ul>
+        <div class=" container navbar__container">
+            <h1 class="logo-studion">Studi<span class="copy--primary">on</span><span class="logo-studion__subtitle">Eventos</span></h1>
+    
+            <ul class="navbar__links">
+                <li>
+                    <a href="#Empresa">
+                        Empresa
+                    </a>
+                </li>
+                <li>
+                    <a href="#Eventos">
+                        Eventos
+                    </a>
+                </li>
+                <li>
+                    <a href="#Galeria">
+                        Galeria
+                    </a>
+                </li>
+                <li>
+                    <a href="#Depoimentos">
+                        Depoimentos
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contato">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <header>
@@ -48,7 +50,7 @@
                   alt="Studion banner" 
                   class="slide__background-image"
                 />
-                <div class="slide__copy">   
+                <div class=" container slide__copy">   
                     <h6><span class="copy--primary">Próximo evento</span><span> -Dia 25 de setembro às 19H</span></h6>
                     <h2><span class="copy--primary">Creative</span> Minds</h2>
                     <button class="btn btn--slide">Saiba mais</button>
@@ -58,32 +60,44 @@
     </header>
 
     <main>
-        <section id="eventos">
-            <ul>
+        <section id="counter">
+            <ul class=" container counter__container">
                 <li>
-                    <h3>+ de 500</h3>
+                  <h3>
+                    + de 500
+                    <small>
                     eventos realizados
+                    </small>
+                  </h3>
                 </li>
                 <li>
-                    <h3>+ de 1.000.000</h3>
-                    de ingressos vendidos
+                  <h3>
+                      + de 1.000.000
+                      <small> 
+                        de ingressos vendidos
+                      </small>
+                  </h3>
                 </li>
                 <li>
-                    <h3>+de 300</h3> 
-                    empresas atentidas
+                  <h3>
+                    +de 300
+                    <small>
+                      empresas atentidas
+                    </small>
+                  </h3> 
                 </li>
             </ul>
         </section>
 
-        <section>
-            <div class="container">
-                <img src="./images/institutional.jpg" />
+        <section class="container institutional">
+            <img src="./images/institutional.jpg" alt="imagem" class="institutional__image"/>
+            <div class="institutional__copy">
                 <h6>Fazemos seu evento acontecer</h6>
                 <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolore esse tenetur quos sed itaque aperiam expedita cum maxime minima.</h4>
                 <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rem, sit obcaecati atque adipisci eum, ipsa ratione autem aut labore, corporis corrupti cupiditate architecto odio qui iste quibusdam aspernatur impedit.
                 </p>
-                <button>Saiba maiss</button>
+                <button class="btn--institutional btn">Saiba mais</button>
             </div>
         </section>
 
