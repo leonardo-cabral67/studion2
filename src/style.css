@@ -157,6 +157,7 @@ ul {
 .btn:active,
 .btn:focus,
 .btn--institutional {
+  box-shadow: 1px 5px 5px;
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: #fff;
@@ -165,6 +166,13 @@ ul {
 .btn--institutional:hover {
   color: var(--color-copy);
   background: unset;
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
+  margin-top: 0rem;
 }
 
 #counter {
@@ -224,4 +232,46 @@ ul {
   line-height: 1.6875rem;
   margin-bottom: 0;
   margin-bottom: 2.5rem;
+}
+
+.quote {
+  background-image: url(./images/parallax.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+}
+
+.quote__copy {
+  background-color: #fff;
+  max-height: 70vh;
+  padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.1875rem;
+  line-height: 1.4375rem;
+  max-width: 58ch;
+  text-transform: uppercase;
+}
+
+.quote__copy h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1875rem;
+  margin: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+  display: block;
 }
