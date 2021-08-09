@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+alternative:wght@300;400;500;700;900&family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 * {
   box-sizing: border-box;
@@ -91,6 +93,7 @@ ul {
 }
 
 .logo-studion__subtitle {
+  display: block;
   font-weight: 300;
   font-size: 0.875rem;
   float: right;
@@ -274,4 +277,97 @@ ul {
 
 .quote__copy h2 span {
   display: block;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 5rem 0;
+  border-bottom: 0.1rem solid #fff3;
+}
+
+.footer .logo-studion {
+  justify-self: start;
+  margin: 0;
+}
+
+.logo-studion__subtitle {
+  display: block;
+}
+
+.footer__form {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 10ch auto;
+  gap: 1.375rem;
+}
+
+.footer__form label {
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.footer__email {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
+  width: 100%;
+}
+
+.footer__email input {
+  background-color: var(--color-primary);
+  border: unset;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.footer__email input::placeholder {
+  color: #000;
+}
+
+.footer__form button {
+  border: none;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.footer__form button:hover {
+  color: #fff;
+  background-color: var(--color-copy);
+}
+
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+  justify-self: end;
+}
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active {
+  color: #fff;
+}
+
+.footer__social a .fa-twitter {
+  color: #000;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 2.5rem 0;
 }
