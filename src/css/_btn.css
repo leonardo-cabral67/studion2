@@ -1,0 +1,59 @@
+.btn {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background: unset;
+  border: 0.125rem solid #fff;
+  border-radius: 5rem;
+  color: var(--color-primary);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn--institutional,
+.btn--contact {
+  box-shadow: 1px 5px 5px;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--contact {
+  box-shadow: unset;
+}
+
+.btn--institutional:hover,
+.btn--contact:hover {
+  color: var(--color-copy);
+  background: unset;
+}
+
+.btn--institutional,
+.btn--quote {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .btn--institutional,
+  .btn--quote {
+    display: inline;
+  }
+}
+
+.btn--contact:hover {
+  color: #fff;
+  box-shadow: unset;
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
+  margin-top: 0rem;
+}
